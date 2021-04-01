@@ -42,6 +42,8 @@ public class Main {
         /**--Ej 4--**/
 
         Banco banco = new Banco("Nacion","204935", "UTN",15000);
+        /*
+
         int option=0;
 
         while(option !=9) {
@@ -70,6 +72,16 @@ public class Main {
                     break;
             }
         }
+
+         */
+
+        /**--Ej 5--**/
+        Hora hora = new Hora(13,1,9);
+        /*
+        hora.mostrarHora();
+
+ */
+
     }
 
     public static void modificarRectangulo(Scanner scan, Rectangulo rec){
@@ -105,8 +117,11 @@ public class Main {
 
         }else{
             System.out.println("Exito al extraer dinero de su cuenta.");
+            banco.setBalance(monto);
         }
     }
+
+
 
 
 }
